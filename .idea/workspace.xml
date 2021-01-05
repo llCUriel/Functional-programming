@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb70ca0e-7884-4671-bc5a-6de65b361019" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functional-programming.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/AgeUtils$TriFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/AgeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/CLIArguments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/CLIArgumentsUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/MathFunctions$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/MathFunctions$Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/MathFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/NombresUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Functional-programming/StringFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AgeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CLIArguments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CLIArgumentsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inferencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NombresUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sintaxis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringFunctions.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mcvx2FSqOahWZXDlJ5W0YVpnEC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PlatziCourse" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Application.MathOperations2">
+    <configuration name="AgeUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AgeUtils" />
+      <module name="Functional-programming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chaining" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chaining" />
+      <module name="Functional-programming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathOperations2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MathOperations2" />
+      <module name="Functional-programming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NombresUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NombresUtils" />
+      <module name="Functional-programming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringFunctions2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringFunctions2" />
+      <module name="Functional-programming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MathOperations2" />
+        <item itemvalue="Application.Chaining" />
+        <item itemvalue="Application.StringFunctions2" />
+        <item itemvalue="Application.NombresUtils" />
+        <item itemvalue="Application.AgeUtils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb70ca0e-7884-4671-bc5a-6de65b361019" name="Default Changelist" comment="" />
+      <created>1609805939306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609805939306</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
