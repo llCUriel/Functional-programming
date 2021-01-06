@@ -15,14 +15,12 @@ public class Main {
                 x.setEdad(Period.between(fecNacDate,LocalDate.now()).getYears());
             }
         };
-
         Auxiliar<Estudiante> calculaCarrera = x -> {
             String tmpValue = x.getCarrera();
             if (tmpValue == null)
                 tmpValue = "Sin especificar";
             x.setCarrera(tmpValue);
         };
-
         Auxiliar<Estudiante> separaNombreCompleto = x -> {
 
             String nombreCompleto = x.getNombreCompleto();
@@ -55,7 +53,6 @@ public class Main {
             x.setApellidoPaterno(apellidoPaterno);
             x.setApellidoMaterno(apellidoMaterno);
         };
-
         Auxiliar<Estudiante> calculaNombreCompleto = x ->{
             String nombreCompleto = x.getNombreCompleto();
             if (nombreCompleto == null)
@@ -72,11 +69,9 @@ public class Main {
         });
 
         System.out.println(estudiante.toString());
+
         // Estudiante{nombreCompleto='John Doe', fecNacimiento='05/03/1997', carrera='Sin especificar', nombre='John', apellidoPaterno='Doe', apellidoMaterno='', edad=23}
-
     }
-
-
 
     public static int  obtenerEspacios(String s) {
         String[] _name = s.split(" ");
