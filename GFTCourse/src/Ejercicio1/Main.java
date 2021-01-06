@@ -8,16 +8,16 @@ public class Main {
 
         Integer a= 5, b = 10, c =  9102019, d = 9102018, e = 2442;
 
-        System.out.println(isLessThan(a,b));       // true   5 < 10
-        System.out.println(isGreaterThan(a,b));    // false  5 > 10
-        System.out.println(isGreaterThan(b,a));    // true  10 > 5
-        System.out.println(isDivisorOf(a,b));      // true   5 is a divisor of 10?
-        System.out.println(isDivisorOf(b,a));      // false 10 is a divisor of 5?
-        System.out.println(isMultipleOf(a,b));     // false  5 is a multiple of 10?
-        System.out.println(isMultipleOf(b,a));     // true  10 is a multiple of 5?
+        System.out.println(isLessThan(a,b));        // true   5 < 10
+        System.out.println(isGreaterThan(a,b));     // false  5 > 10
+        System.out.println(isGreaterThan(b,a));     // true   10 > 5
+        System.out.println(isDivisorOf(a,b));       // true   5       is a divisor of 10?
+        System.out.println(isDivisorOf(b,a));       // false  10      is a divisor of 5?
+        System.out.println(isMultipleOf(a,b));      // false  5       is a multiple of 10?
+        System.out.println(isMultipleOf(b,a));      // true   10      is a multiple of 5?
         System.out.println(isPalindromicNumber(c)); // true   9102019 is a palindromic number?
         System.out.println(isPalindromicNumber(d)); // false  9102018 is a palindromic number?
-        System.out.println(isPalindromicNumber(e)); // true  2442 is a palindromic number?
+        System.out.println(isPalindromicNumber(e)); // true   2442    is a palindromic number?
 
     }
 
