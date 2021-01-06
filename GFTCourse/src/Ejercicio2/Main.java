@@ -7,11 +7,13 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
-
         Auxiliar<Estudiante> calculaEdad = x -> {
-            LocalDate fecNacDate = LocalDate.parse(x.getFecNacimiento(),formatter);
-            x.setEdad(Period.between(fecNacDate,LocalDate.now()).getYears());
+            String fechaDeNacimiento = x.getFecNacimiento();
+            if(fechaDeNacimiento != null) {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
+                LocalDate fecNacDate = LocalDate.parse(fechaDeNacimiento, formatter);
+                x.setEdad(Period.between(fecNacDate,LocalDate.now()).getYears());
+            }
         };
 
         Auxiliar<Estudiante> calculaCarrera = x -> {
@@ -24,52 +26,60 @@ public class Main {
         Auxiliar<Estudiante> separaNombreCompleto = x -> {
 
             String nombreCompleto = x.getNombreCompleto();
-            int espacios = obtenerEspacios(nombreCompleto);
-            String[] parts = nombreCompleto.split(" ");
+            String nombre = "", apellidoPaterno = "", apellidoMaterno = "";
 
-            String  nombre = "",
-                    apellidoPaterno = "",
-                    apellidoMaterno = "";
+            if (nombreCompleto != null) {
+                int espacios = obtenerEspacios(nombreCompleto);
+                String[] parts = nombreCompleto.split(" ");
 
-            if (espacios == 0) {
-                nombre = parts[0];
-            }  //  Nombre1
-            if (espacios == 1) {
-                nombre = parts[0];
-                apellidoPaterno = parts[1];
-            }  //  Nombre1_ApellidoPaterno
-            if (espacios == 2) {
-                nombre = parts[0];
-                apellidoPaterno = parts[1];
-                apellidoMaterno = parts[2];
-            }  //  Nombre1_ApellidoPaterno_ApellidoMaterno
-            if (espacios == 3) {
-                nombre = parts[0] +" "+ parts[1];
-                apellidoPaterno = parts[2];
-                apellidoMaterno = parts[3];
-            }  //  Nombre1_Nombre2_ApellidoPaterno_ApellidoMaterno
+                if (espacios == 0) {
+                    nombre = parts[0];
+                }  //  Nombre1
+                if (espacios == 1) {
+                    nombre = parts[0];
+                    apellidoPaterno = parts[1];
+                }  //  Nombre1_ApellidoPaterno
+                if (espacios == 2) {
+                    nombre = parts[0];
+                    apellidoPaterno = parts[1];
+                    apellidoMaterno = parts[2];
+                }  //  Nombre1_ApellidoPaterno_ApellidoMaterno
+                if (espacios == 3) {
+                    nombre = parts[0] + " " + parts[1];
+                    apellidoPaterno = parts[2];
+                    apellidoMaterno = parts[3];
+                }  //  Nombre1_Nombre2_ApellidoPaterno_ApellidoMaterno
 
+            }
             x.setNombre(nombre);
             x.setApellidoPaterno(apellidoPaterno);
             x.setApellidoMaterno(apellidoMaterno);
         };
 
+        Auxiliar<Estudiante> calculaNombreCompleto = x ->{
+            String nombreCompleto = x.getNombreCompleto();
+            if (nombreCompleto == null)
+                    nombreCompleto = "John Doe";
 
+            x.setNombreCompleto(nombreCompleto);
+        };
 
-        Estudiante estudiante = new Estudiante("Cesar Uriel Hernandez Castellanos", "05/03/1997", null, x -> {
+        Estudiante estudiante = new Estudiante(null, "05/03/1997", null, x -> {
             calculaEdad.procesaObjeto(x);
             calculaCarrera.procesaObjeto(x);
+            calculaNombreCompleto.procesaObjeto(x);
             separaNombreCompleto.procesaObjeto(x);
         });
 
         System.out.println(estudiante.toString());
+        // Estudiante{nombreCompleto='John Doe', fecNacimiento='05/03/1997', carrera='Sin especificar', nombre='John', apellidoPaterno='Doe', apellidoMaterno='', edad=23}
 
-}
+    }
+
+
 
     public static int  obtenerEspacios(String s) {
-        int espacios = 1;
         String[] _name = s.split(" ");
-        espacios = _name.length-1;
-        return espacios;
+        return _name.length-1;
     }
 }
