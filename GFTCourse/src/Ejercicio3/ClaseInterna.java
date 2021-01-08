@@ -84,7 +84,6 @@ public class ClaseInterna extends JFrame {
 
         ventana.addWindowListener(
                 new WindowAdapter() {
-
                     public void windowClosing( WindowEvent evento ){
                         System.exit( 0 );
                     }
